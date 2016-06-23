@@ -1,0 +1,22 @@
+En primer lugar abordaremos por separado la creación de las diferentes franquicias de
+TodoPizza, así como la abstracción del proceso de creación de objetos tipo Pizza. Para ello se
+propone al alumno diseñar, utilizando alguno de los patrones estudiados, la construcción de
+objetos de tipo Franquicia que faciliten la creación de las tiendas que TodoPizza tiene por toda
+España y que encapsulen la creación de un objeto genérico de tipo Pizza en las subclases
+definidas para cada una de las franquicias.
+
+
+1- ¿Qué familia de patrones le resultaría más adecuada para resolver este problema?
+¿por qué?
+
+Factory method para crear pizzas. De esta manera se delega en las las subclases de pizzería el tipo de pizza que han de fabricar.
+Abstract Fabric para crear las pizzerías, de manera que podamos crear una pizzería definiendo en tiempo de ejecución su tipo.
+Los de construcción, ya que se trata de crear nuevos objetos de una misma familia.
+
+2- ¿Qué patrón en concreto cree que sería el más adecuado en este caso? ¿por qué?
+3- Plantee el diagrama de clases necesario para abordar la implementación. Comience
+con un planteamiento genérico y luego particularícelo al problema concreto.
+4- Implemente el diagrama de clases propuesto
+5- Implemente una sencilla clase con un método main que ilustre el funcionamiento de
+esta parte de la práctica. Es decir, que permita crear una franquicia y una pizza
+genérica a partir de la franquicia.
